@@ -9,7 +9,6 @@ has_git() {
 }
 
 backup_vim_dot_files() {
-    echo "Copying our Neovim dot files..."
     cp $HOME/.config/nvim/init.vim .
 }
 
