@@ -14,9 +14,9 @@ backup_vim_dot_files() {
 
 need_to_push_changes() {
     if [[ "$(git status | grep -i "modified")" == *"modified"* ]]; then
-        return 0
-    else
         return 1
+    else
+        return 0
     fi
 }
 
